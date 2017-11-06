@@ -1,0 +1,13 @@
+<form method="post" action=""><button type="submit" name="submit" onclick="if(!confirm('Voulez-vous Supprimer')) return false;">delete</button></form>
+
+<?php
+$path = "$element";
+if(!unlink($path)){
+    echo "Not deleted";
+}
+   else {
+       echo "file deleted";
+   }
+    ;
+
+?>
